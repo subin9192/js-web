@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+img { width:initial; }
+.sub_wrap {
+	margin-top:150px;
+}
+.sub_image {
+	width:100%;
+	background-image:
+	url(../img/zzanggu.jpg);
+	background-position:center;
+	background-size:cover;
+	background-color:#32c6f4;
+	padding:30px;
+}
+.sub_image h1 {
+	color:#f4a61c;
+	font-size:45px;
+	text-align:center;
+	line-height:80px;
+	text-indent:-900px;
+}
+.sub_image p {
+	color:#fff;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	text-indent:-900px;
+}
+.sub_style {
+	width:1800px;
+	height:1800px;
+	margin:0 auto;
+}
+.sub_style h2 {
+	color:#888888;
+	font-size:24px;
+	margin-top:50px;
+}
+.sub_style .skill {
+	width:100%;
+	text-align:center;
+	position:relative;
+}
+.skill .center_img {
+	width:300px;
+	height:300px;
+	margin-left:650px;
+}
+.sub_style .pos {
+	position:absolute;
+	width:1300px;
+	margin-left:10px;
+	top:0;
+}
+.sub_style .pos span /*.element*/{
+	width:18px;
+	height:18px;
+	border-radius:100%;
+	background-color:#2d2d2d;
+	position:absolute;
+}
+.sub_style .pos .box01 {
+	left:700px;
+	top:80px;
+}
+.sub_style .pos .box02 {
+	right:210px;
+	top:80px;
+}
+.sub_style .pos .box03 {
+	left:700px;
+	top:170px;
+}
+.sub_style .pos .box04 {
+	right:210px;
+	top:170px;
+}
+.sub_style .pos .box05 {
+	left:700px;
+	top:260px;
+}
+.sub_style .information {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+}
+.sub_style .information div {
+	position:absolute;
+	width:600px;
+	height:600px;
+}
+.information h3 {
+	color:#000080;
+}
+.sub_style .information .info01 {
+	left:30px;
+	
+}
+.sub_style .information .info02 {
+	right:80px;
+	top:20px;
+}
+.sub_style .information .info03 {
+	left:30px;
+	top:580px;
+}
+.sub_style .information .info04 {
+	right:80px;
+	top:480px;
+}
+.sub_style .information .info05 {
+	left:20px;
+	top:1180px;
+}
+.sub_style .information div a {
+	position:absolute;
+	top:30px;
+	left:40px;
+}
+.sub_style .information div .popArea {
+	display:none;
+	width:300px;
+	height:300px;
+}
+.sub_style .information div .popArea .close {
+	position:absolute;
+	top:-20px;
+	right:-90px;
+	width:32px;
+	height:32px;
+	display:block;
+	cursor:pointer;
+}
+.sub_style .skill .dragLine {
+	position:absolute;
+	border:1px solid #2d2d2d;
+}
+.sub_style .skill .dragLine.d01 {
+	top:78px;
+	left:250px;
+	width:450px;
+	transform:rotate(-5deg);
+}
+.sub_style .skill .dragLine.d02 {
+	top:294.374px;
+	left:614.025px;
+	width:345.858px;
+	transform:rotate(125deg);
+}
+.sub_style .skill .dragLine.d03 {
+	top:294.374px;
+	left:614.025px;
+	width:345.858px;
+	transform:rotate(140.194deg);
+}
+.sub_style .skill .dragLine.d04 {
+	top:741.007px;
+	left:177.56px;
+	width:378.038px;
+	transform:rotate(-4.24759deg);
+}
+.sub_style .skill .dragLine.d05 {
+	top:851.91px;
+	left:606.332px;
+	width:294.165px;
+	transform:rotate(138.997deg);
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>지도에 삽입된 탭메뉴</title>
+<link href="css/sub_map.css" type="text/css" rel="stylesheet">
+<script src="js/jquery-3.3.1.js">
+</script>
+<script src='js/sub_map.js'>
+</script>
+</head>
+
+<body>
+<div class="sub_map">
+<h1>매장 찾기</h1>
+	<div class="map_wrap">
+       <div class="map_title">
+            <ul>
+                <li><a href="#">대원미디어</a></li>
+                <li><a href="#">대원방송</a></li>
+                <li><a href="#">대원디에스티</a></li>
+            </ul>
+        </div>
+        <div class="map_con">
+            <div class="map_item" id="map1">지도1</div>
+            <div class="map_item" id="map2">지도2</div>
+            <div class="map_item" id="map3">지도3</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+var map1, map2, map3;
+
+function drawMap() {
+    
+    var mapOptions = {
+      zoom: 13,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      mapTypeControl: true,
+      fullscreenControl: false 
+     }
+
+    mapOptions.center = new google.maps.LatLng(37.529353, 126.964117); // 대원미디어
+    map1 = new google.maps.Map(document.getElementById("map1"), mapOptions);
+    
+    mapOptions.center = new google.maps.LatLng(37.525944, 126.963201); // 대원방송
+    map2 = new google.maps.Map(document.getElementById("map2"), mapOptions);
+	
+	mapOptions.center = new google.maps.LatLng(37.526114, 126.963426); // 대원디에스티
+    map3 = new google.maps.Map(document.getElementById("map3"), mapOptions);
+	//marker
+	marker1=new google.maps.Marker({
+		position:new google.maps.LatLng(37.529353, 126.964117),
+		map:map1
+	});
+	marker2=new google.maps.Marker({
+		position:new google.maps.LatLng(37.525944, 126.963201),
+		map:map2
+	});
+	marker3=new google.maps.Marker({
+		position:new google.maps.LatLng(37.526114, 126.963426),
+		map:map3
+	});
+ }
+</script>
+<script async defer src="http://maps.google.com/maps/api/js?key=AIzaSyCvDN-LuS_9_VFkR71Sc56P6y4cwWKvEpU&callback=drawMap"></script>
+</body>
+</html>

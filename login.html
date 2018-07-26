@@ -1,0 +1,41 @@
+<?
+$g4_path="./gb";
+include_once("./gb/common.php");
+include_once("./gb/head.sub.php");
+include_once("./gb/lib/outlogin.lib.php"); 
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>대원미디어</title>
+<link href="css/daewon-0521.css" type="text/css" rel="stylesheet">
+<link href="css/board.css" type="text/css" rel="stylesheet">
+<script src="js/jquery-3.3.1.js">
+</script>
+
+</head>
+
+<body onload="initialize()">
+<div class="wrap">
+	<header>
+    
+    	<? include "header.html"; ?>
+        
+    </header>
+    <section>
+    	<div class="sub_image">
+            <h1>눈보리</h1>
+            <p>애니메이션</p>
+        </div>
+        <div class="login_wrap">
+        <h1>로그인</h1>
+        	<div class="login">
+            <?=outlogin("basic");?>
+            </div>
+        </div>
+    </section>
+    <? include "footer.html"; ?>
+</div>
+</body>
+</html>
